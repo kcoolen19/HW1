@@ -1,6 +1,6 @@
 
 /*
- * *** PLACE YOUR NAME / SECTION  HERE ***
+ * Keiron Coolen COMP 272 Section 001
  *
  * Homework # 1 (Programming Assignment). This Java class defines some basic
  * manipulation operations on Linked-Lists and Stacks.
@@ -247,8 +247,8 @@ public class HW1 {
         /*
          The stack is traversed
          The numbers are popped one by one and stored in the variable, current
-         When the current value popped matches parameter k and is greater than the largest index,
-         The largest index becomes the current index reached
+         If the current value being popped matches parameter k and is greater than the largest index,
+         the largest index becomes the current index reached
          The number popped is pushed in the temporary stack
          As the numbers are popped, the current index is decremented to 0
          */
@@ -260,7 +260,7 @@ public class HW1 {
             tempStack.push(current);
             currentIndex--;  
         }
-        // The original stack is restored by pushing the values popped from the temporary stack
+        // The original stack is restored by pushing the values being popped from the temporary stack
         while (!tempStack.isEmpty()) {
             stack.push(tempStack.pop());
         }
